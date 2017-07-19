@@ -19,9 +19,11 @@ body {
 	float: left;
 }
 
-#container {
-	overflow: hidden;
-	width:100%;
+
+/* changing text color of section to grey */
+#Section {
+	color: grey;
+	height: 20px;
 }
 
 /* to remove extra padding related to header class not needed */
@@ -31,53 +33,51 @@ body {
 
 /* section containing nested sections on left portion of screen */
 .section {
+	position: relative;
 	width: 45%;
 	background-color: #ebebeb;
 	float: left;
 	margin-left: 10%;
 	text-align: center;
-	height: 20%;
 	margin-top: 1%;
+	height: 250px;
 
 }
 
 /* h1 h2 h3 section nested inside article */
 #h1h2h3 {
-	width: 91%;
+	position: absolute;
+	width: 92%;
 	background-color: #ebebeb;
 	color: grey;
 	text-align: center;
 	margin-left: 2.5%;
 	margin-right: 2.5%;
-	padding: 2%;
-}
-
-/* changing text color of section to grey */
-#Section {
-	color: grey;
+	padding: .5%;
+	bottom: 80px;
 }
 
 /* p section nested inside article */
 #paragraph {
-	width: 91%;
+	position: absolute;
+	width: 92%;
 	background-color: #ebebeb;
 	color: grey;
 	text-align: center;
 	margin-left: 2.5%;
 	margin-right: 2.5%;
-	padding: 2%;
-	margin-bottom: 2.5%;
+	padding: .5%;
+	bottom: 35px;
 }
 
-/* Nested ssection */
+/* Nested section */
 .section2 {
 	background-color: #777;
 	margin: 1%;
 	color: white;
-	padding: 2%;
 	float:left;
-	width: 94%;
-	height: 60%;
+	width: 98%;
+	height: 150px;
 }
 
 
@@ -91,7 +91,8 @@ body {
 	text-align: center;
 	margin-left: 1%;
 	margin-top: 1%;
-	padding-bottom: 20%;
+	height: 250px;
+
 }
 
 /* Footer */
